@@ -46,7 +46,7 @@ export default class Presentation extends React.Component {
     return (
       <Deck transition={["slide"]} transitionDuration={500} theme={theme}>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
             Holy BEM!
           </Heading>
         </Slide>
@@ -54,7 +54,7 @@ export default class Presentation extends React.Component {
           <Image src={images.whySoSerious.replace("/", "")} margin="0px auto" height="400px"/>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} caps lineHeight={1} textColor="secondary">
+          <Heading size={1} caps lineHeight={1} textColor="tertiary">
             Purposes:
           </Heading>
           <List>
@@ -65,19 +65,19 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
             Key Concepts
           </Heading>
           <Image src={images.lego.replace("/", "")} margin="0px auto" height="400px"/>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} caps lineHeight={1} textColor="secondary">
+          <Heading size={1} caps lineHeight={1} textColor="tertiary">
             Block
           </Heading>
           <Text textColor="secondary" textAlign="center" textSize={30}>
             A logically and functionally independent page component
           </Text>
-          <Heading size={5} lineHeight={1} textColor="secondary">
+          <Heading size={5} lineHeight={1} textColor="tertiary">
             Block features:
           </Heading>
           <List>
@@ -87,26 +87,26 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
             Nested structure
           </Heading>
           <Image src={images.nested.replace("/", "")} margin="0px auto" height="400px"/>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
             Arbitrary placement
           </Heading>
           <Image src={images.placement.replace("/", "")} margin="0px auto" height="200px"/>
           <Image src={images.placement2.replace("/", "")} margin="0px auto" height="200px"/>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} caps lineHeight={1} textColor="secondary">
+          <Heading size={1} caps lineHeight={1} textColor="tertiary">
             Re-use
           </Heading>
           <Image src={images.reuse.replace("/", "")} margin="0px auto" height="400px"/>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} caps lineHeight={1} textColor="secondary">
+          <Heading size={1} caps lineHeight={1} textColor="tertiary">
             Element
           </Heading>
           <Text textColor="secondary" textAlign="center" textSize={30}>
@@ -115,7 +115,7 @@ export default class Presentation extends React.Component {
           <Image src={images.element.replace("/", "")} margin="0px auto" height="400px"/>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} caps lineHeight={1} textColor="secondary">
+          <Heading size={1} caps lineHeight={1} textColor="tertiary">
             Modifier
           </Heading>
           <Text textColor="secondary" textAlign="center" textSize={30}>
@@ -124,13 +124,13 @@ export default class Presentation extends React.Component {
           <Image src={images.modifier.replace("/", "")} margin="0px auto" height="400px"/>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} lineHeight={1} textColor="secondary">
+          <Heading size={1} lineHeight={1} textColor="tertiary">
             Mix
           </Heading>
           <Text textColor="secondary" textAlign="center" textSize={30}>
             An instance of different BEM entities being hosted on a single DOM node.
           </Text>
-          <Heading size={5} lineHeight={1} textColor="secondary">
+          <Heading size={5} lineHeight={1} textColor="tertiary">
             Mixes allow us to:
           </Heading>
           <List>
@@ -139,14 +139,24 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
-          <Heading size={1} lineHeight={1} textColor="secondary">
+          <Heading size={1} lineHeight={1} textColor="tertiary">
             Demo
           </Heading>
-          <Text textColor="secondary" textAlign="center" textSize={20}>
-            A Button <Link textSize={15} href="https://codesandbox.io/s/yvlr921jzv" target="_blank">Sandbox</Link>
-          </Text>
-          <Text textColor="secondary" textAlign="center" textSize={20}>
-            A Button Group <Link textSize={15} href="https://codesandbox.io/s/yvlr921jzv" target="_blank">Sandbox</Link>
+          <List>
+            <ListItem>
+                A Button <Link href="https://codesandbox.io/s/yvlr921jzv" target="_blank">Sandbox</Link>
+            </ListItem>
+            <ListItem>
+                A Button Group <Link href="https://codesandbox.io/s/n15zj0ynjm" target="_blank">Sandbox</Link>
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["slide"]} bgColor="primary">
+          <Heading size={1} lineHeight={1} textColor="tertiary">
+            Links
+          </Heading>
+          <Text textColor="secondary" textAlign="center" textSize={30}>
+            BEM <Link href="https://en.bem.info/methodology/quick-start/" target="_blank">docs</Link>
           </Text>
         </Slide>
       </Deck>
