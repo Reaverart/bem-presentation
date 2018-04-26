@@ -17,7 +17,9 @@ import {
 
 
 const images = {
+  holy: require("../assets/holy.jpg"),
   whySoSerious: require("../assets/why.gif"),
+  rick: require("../assets/rick.gif"),
   lego: require("../assets/lego.webp"),
   nested: require("../assets/nested.png"),
   placement: require("../assets/placement.png"),
@@ -49,6 +51,7 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
             Holy BEM!
           </Heading>
+          <Image src={images.holy.replace("/", "")} margin="0px auto" height="400px"/>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
           <Image src={images.whySoSerious.replace("/", "")} margin="0px auto" height="400px"/>
@@ -140,7 +143,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={1} lineHeight={1} textColor="tertiary">
-            Demo
+            BEM concepts in Emotion
           </Heading>
           <List>
             <ListItem>
@@ -158,6 +161,7 @@ export default class Presentation extends React.Component {
           <Text textColor="secondary" textAlign="center" textSize={30}>
             BEM <Link href="https://en.bem.info/methodology/quick-start/" target="_blank">docs</Link>
           </Text>
+          <Image src={images.rick.replace("/", "")} margin="0px auto" height="400px"/>
         </Slide>
       </Deck>
     );
